@@ -4,6 +4,10 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+body {
+    /* max-height: 100vh; */
+    overflow: auto;
+}
 .red {
     background-color: rgb(95, 43, 43);
 }
@@ -16,8 +20,17 @@
 .voilet {
     background-color: rgb(84, 42, 84);
 }
+
+.game {
+    height: 100vh;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
 .box-cant {
-    height: 70vh;
+    height: 63vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +49,8 @@
     border-radius: 10px;
     cursor: pointer;
     outline: rgb(0, 0, 0);
+    border: none;
+    outline: none;
     outline-width: 5px;
     outline-style: groove;
 }
@@ -65,17 +80,19 @@
 
 /* Start-Reset */
 .start-reset {
+    padding: 0 10px;
     margin: auto;
-    max-width: 580px;
+    max-width: 570px;
     height: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    /* background-color: red; */
 }
 .start-reset button {
     background-color: yellow;
     padding: 13px 33px;
-    border-radius: 30px;
+    border-radius: 15px;
     font-size: 1.3rem;
     font-weight: 900;
     cursor: pointer;

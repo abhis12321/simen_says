@@ -5,10 +5,8 @@
     overflow: hidden;
 }
 body {
-    /* max-height: 100vh; */
     min-height: 100vh;
-    background: #000;
-    overflow: auto;
+    background: #060019;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -31,7 +29,7 @@ body {
     max-width: 550px;
     width: 98%;
     margin: auto;
-    padding: 10px;
+    padding-bottom: 1rem;
     box-shadow: 0 0 10px black;
     background-color: aliceblue;
     border-radius: 15px;
@@ -77,18 +75,21 @@ body {
 
 /* Upper Box */
 .upper-box {
+    padding: 1rem;
     text-align: center;
-    margin: 20px auto;
-    border-radius: 20px;
-    background: rgb(241, 198, 232);
+    background: rgb(252, 165, 147);
     box-shadow: 0 0 10px black;
-    height: 20vh;
     max-width: 700px;
-    width: 98%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.upper-box h1 {
+    padding: 10px;
 }
 /* Upper Box */
 
@@ -103,7 +104,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: red; */
 }
 .start-reset button {
     background-color: yellow;
@@ -114,7 +114,6 @@ body {
     cursor: pointer;
     text-align: center;
     width: 120px;
-
 }
 .start-reset button:hover{
     box-shadow: 0 0 5px black;
@@ -129,21 +128,17 @@ body {
 
 
 
-
-
+.p-10 {
+    padding: 10px;
+}
 .random-flash {
     background-color: white;
 }
 .user-flash {
-    background-color: green;
+    background-color: rgb(172, 47, 6);
 }
 
-@media screen and (max-width:700px) {    
-    .upper-box {
-        margin: 10px;
-    }
-}
-@media screen and (max-width:480px) {
+@media screen and (max-width:450px) {
     .box {
         margin: 10px;
     }

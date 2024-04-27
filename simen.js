@@ -1,4 +1,4 @@
-let body = document.querySelector("body");
+let body = document.querySelector(".game");
 let start = document.querySelector(".start");
 let quit = document.querySelector(".reset");
 let scoreT = document.querySelector(".score");
@@ -50,7 +50,7 @@ function userFlash(box){
 }
 function handleClick(event) {
     if(isStarted) {
-        userFlash(event.target);
+        // userFlash(event.target);
         let color = event.target.getAttribute("id");
         if(color === randomData[levelchecker]) {
             userData.push(color);
@@ -64,7 +64,7 @@ function handleClick(event) {
         else {
             userFlash(body);
             console.log("reset");
-            scoreT.innerHTML = `Game over!! Your score : <b>${level*5}</b>`
+            scoreT.innerHTML = `<p class='p-10'>Game over!! <br/> Your score : <b>${level*5}</b></p>`
             isStarted = false;
         }
     
